@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Partner</title>
 
     <!-- favicon -->
-     <link rel="shortcut icon" href="" type="image/x-icon">
+     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
      <!-- tailwindCSS and daisyUI CDN link -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -26,9 +26,26 @@
 
 </head>
 
-<body>
+<body class="inter">
     <!-- header sction start -->
-     <header>
+     <header class="max-w-screen-xl mx-auto">
+        <!-- navbar content -->
+         <nav class="flex items-center justify-between text-sm font-medium px-5 lg:px-0 py-5">
+            <div>
+                <img src="./images/logo.png" alt="" class="w-16">
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="#" class="hover:text-[#E94339] transition-colors hidden lg:block">Restaurants</a>
+                <a href="#" class="hover:text-[#E94339] transition-colors hidden lg:block">Recipes</a>
+                <a href="#" class="hover:text-[#E94339] transition-colors hidden lg:block">About</a>
+                <a href="#" class="hover:text-[#E94339] transition-colors hidden lg:block">Page <i class="fa-solid fa-angle-down"></i></a>
+            </div>
+            <div class="flex items-center gap-5 ">
+                <a href="#" class="hover:text-[#E94339] transition-colors hidden lg:block">Login</a>
+                <button class="btn bg-[#E94339] text-white rounded-full hidden lg:block">Sign Up</button>
+                <i class="fa-solid fa-bars text-[#E94339] text-xl  lg:hidden"></i>
+            </div>
+         </nav>
 
      </header>
     <!-- header sction end -->
